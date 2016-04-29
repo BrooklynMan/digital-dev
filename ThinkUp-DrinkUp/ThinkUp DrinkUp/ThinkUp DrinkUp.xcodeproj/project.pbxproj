@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		660F77551CD2F8B400954BDA /* PlayerWon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660F77541CD2F8B400954BDA /* PlayerWon.swift */; };
 		66184D2A1CD2E96C007B63D6 /* Staging Screen – 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66184D271CD2E96C007B63D6 /* Staging Screen – 1@3x.png */; };
 		66184D2B1CD2E96C007B63D6 /* Staging Screen – 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66184D281CD2E96C007B63D6 /* Staging Screen – 2@3x.png */; };
 		66184D2C1CD2E96C007B63D6 /* Staging Screen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66184D291CD2E96C007B63D6 /* Staging Screen@3x.png */; };
+		667775741CD3C76100276B13 /* dataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775731CD3C76100276B13 /* dataModule.swift */; };
+		667775781CD3D63800276B13 /* PlayerNamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775771CD3D63800276B13 /* PlayerNamesVC.swift */; };
+		6677757A1CD3D66A00276B13 /* FirstPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775791CD3D66A00276B13 /* FirstPlayerVC.swift */; };
+		6677757C1CD3D68C00276B13 /* FirstQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677757B1CD3D68C00276B13 /* FirstQuestionVC.swift */; };
+		6677757E1CD3D6AB00276B13 /* SecondPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677757D1CD3D6AB00276B13 /* SecondPlayerVC.swift */; };
+		667775801CD3D6C500276B13 /* SecondQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677757F1CD3D6C500276B13 /* SecondQuestionVC.swift */; };
+		667775821CD3D6DD00276B13 /* ThirdPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775811CD3D6DD00276B13 /* ThirdPlayerVC.swift */; };
+		667775841CD3D6F800276B13 /* ThirdQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775831CD3D6F800276B13 /* ThirdQuestionVC.swift */; };
+		667775861CD3D72100276B13 /* PickAnswerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775851CD3D72100276B13 /* PickAnswerVC.swift */; };
+		667775881CD3D73900276B13 /* PlayerWonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667775871CD3D73900276B13 /* PlayerWonVC.swift */; };
 		66D190561CCEC32A0075406D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D190551CCEC32A0075406D /* AppDelegate.swift */; };
 		66D190581CCEC32A0075406D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D190571CCEC32A0075406D /* ViewController.swift */; };
 		66D1905B1CCEC32A0075406D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D190591CCEC32A0075406D /* Main.storyboard */; };
@@ -20,13 +29,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		660F77541CD2F8B400954BDA /* PlayerWon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWon.swift; sourceTree = "<group>"; };
 		66184D271CD2E96C007B63D6 /* Staging Screen – 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Staging Screen – 1@3x.png"; path = "../../../../../core collab.lab/projects/thinkUp drinkUp/alpha/Staging Screen – 1@3x.png"; sourceTree = "<group>"; };
 		66184D281CD2E96C007B63D6 /* Staging Screen – 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Staging Screen – 2@3x.png"; path = "../../../../../core collab.lab/projects/thinkUp drinkUp/alpha/Staging Screen – 2@3x.png"; sourceTree = "<group>"; };
 		66184D291CD2E96C007B63D6 /* Staging Screen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Staging Screen@3x.png"; path = "../../../../../core collab.lab/projects/thinkUp drinkUp/alpha/Staging Screen@3x.png"; sourceTree = "<group>"; };
+		667775731CD3C76100276B13 /* dataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModule.swift; sourceTree = "<group>"; usesTabs = 1; };
+		667775771CD3D63800276B13 /* PlayerNamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNamesVC.swift; sourceTree = "<group>"; };
+		667775791CD3D66A00276B13 /* FirstPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPlayerVC.swift; sourceTree = "<group>"; };
+		6677757B1CD3D68C00276B13 /* FirstQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstQuestionVC.swift; sourceTree = "<group>"; };
+		6677757D1CD3D6AB00276B13 /* SecondPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPlayerVC.swift; sourceTree = "<group>"; };
+		6677757F1CD3D6C500276B13 /* SecondQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondQuestionVC.swift; sourceTree = "<group>"; };
+		667775811CD3D6DD00276B13 /* ThirdPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPlayerVC.swift; sourceTree = "<group>"; };
+		667775831CD3D6F800276B13 /* ThirdQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdQuestionVC.swift; sourceTree = "<group>"; };
+		667775851CD3D72100276B13 /* PickAnswerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickAnswerVC.swift; sourceTree = "<group>"; };
+		667775871CD3D73900276B13 /* PlayerWonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWonVC.swift; sourceTree = "<group>"; };
 		66D190521CCEC32A0075406D /* ThinkUp DrinkUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThinkUp DrinkUp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D190551CCEC32A0075406D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66D190571CCEC32A0075406D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66D190571CCEC32A0075406D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		66D1905A1CCEC32A0075406D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66D1905C1CCEC32A0075406D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D1905F1CCEC32A0075406D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,10 +82,19 @@
 		66D190541CCEC32A0075406D /* ThinkUp DrinkUp */ = {
 			isa = PBXGroup;
 			children = (
+				667775771CD3D63800276B13 /* PlayerNamesVC.swift */,
 				66D190551CCEC32A0075406D /* AppDelegate.swift */,
 				66D190571CCEC32A0075406D /* ViewController.swift */,
-				660F77541CD2F8B400954BDA /* PlayerWon.swift */,
+				667775731CD3C76100276B13 /* dataModule.swift */,
 				66D190591CCEC32A0075406D /* Main.storyboard */,
+				667775791CD3D66A00276B13 /* FirstPlayerVC.swift */,
+				6677757B1CD3D68C00276B13 /* FirstQuestionVC.swift */,
+				6677757D1CD3D6AB00276B13 /* SecondPlayerVC.swift */,
+				6677757F1CD3D6C500276B13 /* SecondQuestionVC.swift */,
+				667775811CD3D6DD00276B13 /* ThirdPlayerVC.swift */,
+				667775831CD3D6F800276B13 /* ThirdQuestionVC.swift */,
+				667775851CD3D72100276B13 /* PickAnswerVC.swift */,
+				667775871CD3D73900276B13 /* PlayerWonVC.swift */,
 				66184D271CD2E96C007B63D6 /* Staging Screen – 1@3x.png */,
 				66184D281CD2E96C007B63D6 /* Staging Screen – 2@3x.png */,
 				66184D291CD2E96C007B63D6 /* Staging Screen@3x.png */,
@@ -155,9 +182,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667775781CD3D63800276B13 /* PlayerNamesVC.swift in Sources */,
+				667775861CD3D72100276B13 /* PickAnswerVC.swift in Sources */,
+				6677757C1CD3D68C00276B13 /* FirstQuestionVC.swift in Sources */,
 				66D190581CCEC32A0075406D /* ViewController.swift in Sources */,
-				660F77551CD2F8B400954BDA /* PlayerWon.swift in Sources */,
+				667775821CD3D6DD00276B13 /* ThirdPlayerVC.swift in Sources */,
+				667775841CD3D6F800276B13 /* ThirdQuestionVC.swift in Sources */,
+				667775881CD3D73900276B13 /* PlayerWonVC.swift in Sources */,
+				6677757A1CD3D66A00276B13 /* FirstPlayerVC.swift in Sources */,
 				66D190561CCEC32A0075406D /* AppDelegate.swift in Sources */,
+				667775741CD3C76100276B13 /* dataModule.swift in Sources */,
+				667775801CD3D6C500276B13 /* SecondQuestionVC.swift in Sources */,
+				6677757E1CD3D6AB00276B13 /* SecondPlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

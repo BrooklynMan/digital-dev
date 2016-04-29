@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InstructionsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="InstructionsVC" id="BYZ-38-t0r" customClass="ViewController" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="98" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-SG-O60">
@@ -39,14 +39,14 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="8IC-bT-NjA" kind="show" id="HX3-Bd-m4Q"/>
+                                    <segue destination="JwU-OU-QCP" kind="show" id="p1K-rk-ZJh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1X-P6-zot">
                                 <rect key="frame" x="20" y="13" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -65,45 +65,81 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
             </objects>
             <point key="canvasLocation" x="223" y="339"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="PzA-51-tdG">
+        <!--PlayerNamesVC-->
+        <scene sceneID="bTQ-yK-6fZ">
             <objects>
-                <tableViewController id="8IC-bT-NjA" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yfz-Pk-jtG">
+                <viewController title="PlayerNamesVC" id="JwU-OU-QCP" customClass="PlayerNamesVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abq-MI-9Ce"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ujh-9K-Yd5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mgH-Zm-Mxc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Names" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xF3-6u-chd">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xjR-A0-gji">
-                            <rect key="frame" x="0.0" y="120" width="414" height="49"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                            <state key="normal" title="Continue"/>
-                            <connections>
-                                <segue destination="9Tr-Lh-YaU" kind="show" id="H7B-d8-h4p"/>
-                            </connections>
-                        </button>
-                        <connections>
-                            <outlet property="dataSource" destination="8IC-bT-NjA" id="DDu-oz-qMi"/>
-                        </connections>
-                    </tableView>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-kI-h4s">
+                                <rect key="frame" x="20" y="667" width="374" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <segue destination="9Tr-Lh-YaU" kind="show" id="dxU-is-6j4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter Player Names" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBR-1L-sff">
+                                <rect key="frame" x="20" y="105" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Names" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-kB-XFl">
+                                <rect key="frame" x="20" y="20" width="374" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CoD-sV-EUu">
+                                <rect key="frame" x="20" y="178" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="clc-y5-KL2">
+                                <rect key="frame" x="20" y="241" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Trg-nR-uDy">
+                                <rect key="frame" x="227" y="178" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-9p-2Fu">
+                                <rect key="frame" x="227" y="241" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3294117647" green="0.63529411759999999" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5gi-zs-fLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="ContinuePlayerName" destination="Dee-kI-h4s" id="sWr-Zf-6OD"/>
+                        <outlet property="FirstPlayerName" destination="CoD-sV-EUu" id="kYu-mb-X5a"/>
+                        <outlet property="FourthPlayerName" destination="3Bo-9p-2Fu" id="cAp-gS-zoC"/>
+                        <outlet property="SecondPlayerName" destination="Trg-nR-uDy" id="3f5-F9-zqg"/>
+                        <outlet property="ThirdPlayerName" destination="clc-y5-KL2" id="oS9-w4-lS0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sk-Qc-JNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstPlayerVC-->
         <scene sceneID="tKx-eB-pmY">
             <objects>
-                <viewController id="9Tr-Lh-YaU" sceneMemberID="viewController">
+                <viewController title="FirstPlayerVC" id="9Tr-Lh-YaU" customClass="FirstPlayerVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="00g-Pc-7LU"/>
                         <viewControllerLayoutGuide type="bottom" id="2I7-X5-llQ"/>
@@ -124,19 +160,37 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                     <segue destination="bVG-S4-yG1" kind="show" id="7Vp-wi-Ytf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOV-g4-JX0">
+                                <rect key="frame" x="20" y="63" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFN-8c-XIN">
+                                <rect key="frame" x="20" y="279" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ContinueP1" destination="kfA-8A-nZn" id="HFI-V9-SUN"/>
+                        <outlet property="FirstPlayerName" destination="fOV-g4-JX0" id="v0n-6S-FPl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afy-7H-Xr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840" y="1288"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondPlayerVC-->
         <scene sceneID="dpU-OS-yAR">
             <objects>
-                <viewController id="NuO-gO-dAz" sceneMemberID="viewController">
+                <viewController title="SecondPlayerVC" id="NuO-gO-dAz" customClass="SecondPlayerVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xas-A5-eGx"/>
                         <viewControllerLayoutGuide type="bottom" id="6Sk-2y-Srd"/>
@@ -157,19 +211,38 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                     <segue destination="Tb2-0F-woY" kind="show" id="S0R-B4-XHX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0f-gr-kyQ">
+                                <rect key="frame" x="20" y="62" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LN-ig-8Er">
+                                <rect key="frame" x="20" y="278" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ContinueP2" destination="dLi-Zp-HRJ" id="2GC-uo-CAa"/>
+                        <outlet property="ContinueQ2" destination="dLi-Zp-HRJ" id="zXX-zG-8ef"/>
+                        <outlet property="SecondPlayerName" destination="x0f-gr-kyQ" id="Yyp-uS-XtW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0q-Nb-08O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="2262"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondQuestionVC-->
         <scene sceneID="mm8-As-0cW">
             <objects>
-                <viewController id="Tb2-0F-woY" sceneMemberID="viewController">
+                <viewController title="SecondQuestionVC" id="Tb2-0F-woY" customClass="SecondQuestionVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zr2-NW-Xx3"/>
                         <viewControllerLayoutGuide type="bottom" id="QKY-5a-DLy"/>
@@ -182,14 +255,14 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="20" y="20" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILA-pR-ihh">
                                 <rect key="frame" x="20" y="105" width="174" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-D9-aOc">
@@ -212,7 +285,7 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="202" y="105" width="192" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="Answer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vct-ux-0Jl">
@@ -225,15 +298,21 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <color key="backgroundColor" red="0.69019607839999997" green="0.4941176471" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="AnswerBox" destination="1PJ-D9-aOc" id="1Zd-PT-A9P"/>
+                        <outlet property="ContinueQ2" destination="bYD-8B-9oR" id="XhM-Fs-2z4"/>
+                        <outlet property="QuestionBox" destination="1PJ-D9-aOc" id="xkI-HU-91R"/>
+                        <outlet property="SubjectPlayerName" destination="T9o-Xc-TcV" id="GnO-yi-X4x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyJ-To-jC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1552" y="2262"/>
         </scene>
-        <!--View Controller-->
+        <!--ThirdPlayerVC-->
         <scene sceneID="LmG-Ta-A73">
             <objects>
-                <viewController id="2hF-Oh-iDY" sceneMemberID="viewController">
+                <viewController title="ThirdPlayerVC" id="2hF-Oh-iDY" customClass="ThirdPlayerVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nyP-Mw-93D"/>
                         <viewControllerLayoutGuide type="bottom" id="yRm-ok-4J8"/>
@@ -254,19 +333,37 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                     <segue destination="OjW-yd-Pn5" kind="show" id="84y-Qb-M9Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-8W-b12">
+                                <rect key="frame" x="20" y="275" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VR-u8-KRV">
+                                <rect key="frame" x="20" y="59" width="374" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ContinueP3" destination="Tbf-Rb-UVn" id="Imd-dD-nvE"/>
+                        <outlet property="ThirdPlayerName" destination="3VR-u8-KRV" id="AeP-7P-GLs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JlB-mV-gKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="3235"/>
         </scene>
-        <!--View Controller-->
+        <!--ThirdQuestionVC-->
         <scene sceneID="gf4-Oe-ovp">
             <objects>
-                <viewController id="OjW-yd-Pn5" sceneMemberID="viewController">
+                <viewController title="ThirdQuestionVC" id="OjW-yd-Pn5" customClass="ThirdQuestionVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Ff-vn-Izq"/>
                         <viewControllerLayoutGuide type="bottom" id="37o-dz-57w"/>
@@ -279,14 +376,14 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="20" y="20" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJO-Wb-L35">
                                 <rect key="frame" x="20" y="105" width="174" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-FW-VYE">
@@ -309,7 +406,7 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="202" y="105" width="192" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="Answer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LuG-cd-EIr">
@@ -322,15 +419,21 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <color key="backgroundColor" red="0.69019607839999997" green="0.4941176471" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="AnswerBox" destination="9PR-FW-VYE" id="sSx-Sn-WtI"/>
+                        <outlet property="ContinueQ3" destination="vHo-xH-FJR" id="FNB-3E-o7t"/>
+                        <outlet property="SubjectPlayer" destination="JJR-Zh-T73" id="bg3-rf-XZQ"/>
+                        <outlet property="SubjectPlayerName" destination="JJR-Zh-T73" id="sb3-WV-Eoa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyU-Lx-wkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1552" y="3235"/>
         </scene>
-        <!--View Controller-->
+        <!--PickAnswerVC-->
         <scene sceneID="mJy-9F-7iT">
             <objects>
-                <viewController id="7KV-xY-Da3" sceneMemberID="viewController">
+                <viewController title="PickAnswerVC" id="7KV-xY-Da3" customClass="PickAnswerVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LbH-0G-mKz"/>
                         <viewControllerLayoutGuide type="bottom" id="eCE-MI-n1H"/>
@@ -343,14 +446,14 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="20" y="105" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-Fj-fyr">
                                 <rect key="frame" x="20" y="20" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-O9-JGh">
@@ -405,15 +508,28 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <color key="backgroundColor" red="0.96078431369999995" green="0.63137254899999995" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Answer1" destination="qqA-O9-JGh" id="4K2-SW-JN0"/>
+                        <outlet property="Answer2" destination="84N-C0-oJy" id="7sS-hh-N19"/>
+                        <outlet property="Answer3" destination="FDW-Rk-n9Y" id="ejD-Vr-jph"/>
+                        <outlet property="PickOption1" destination="1bi-5t-b5z" id="zdi-NW-QCc"/>
+                        <outlet property="PickOption2" destination="ldG-wr-yG5" id="97g-Ui-if2"/>
+                        <outlet property="PickOption3" destination="X0u-rC-bB6" id="Ouu-IR-KLO"/>
+                        <outlet property="PickP1" destination="1bi-5t-b5z" id="Xf9-cY-FkG"/>
+                        <outlet property="PickP2" destination="ldG-wr-yG5" id="h6E-yH-vqy"/>
+                        <outlet property="PickP3" destination="X0u-rC-bB6" id="pTQ-n8-Vhv"/>
+                        <outlet property="SubjectPlayer" destination="LRd-Fj-fyr" id="HfW-z2-EWx"/>
+                        <outlet property="SubjectPlayerName" destination="LRd-Fj-fyr" id="4fP-St-aAx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Utk-Pq-Z7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2724" y="3235"/>
         </scene>
-        <!--Player Won-->
+        <!--PlayerWonVC-->
         <scene sceneID="PMy-Bj-TIK">
             <objects>
-                <viewController id="ez8-hT-TP0" customClass="PlayerWon" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PlayerWonVC" id="ez8-hT-TP0" customClass="PlayerWonVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N1e-Gy-zXx"/>
                         <viewControllerLayoutGuide type="bottom" id="28r-es-yIG"/>
@@ -426,28 +542,28 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="20" y="83" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6b-5i-uMa">
                                 <rect key="frame" x="20" y="20" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Had The Best Answer!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-zl-eyd">
                                 <rect key="frame" x="20" y="136" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now, Take A Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClG-Dg-dFi">
                                 <rect key="frame" x="74" y="283" width="266" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEA-Ux-1GJ">
@@ -470,6 +586,9 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="PlayAgain" destination="0Jh-Ww-C8p" id="fJG-1S-vw0"/>
+                        <outlet property="PlayNewGame" destination="HEA-Ux-1GJ" id="TM0-xw-fG3"/>
+                        <outlet property="WinningPlayer" destination="Xl9-q7-k4r" id="Jla-6Z-r4N"/>
                         <outlet property="label" destination="Xl9-q7-k4r" id="Vs0-sD-ivD"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="4Kh-B0-Swt"/>
                     </connections>
@@ -478,10 +597,10 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
             </objects>
             <point key="canvasLocation" x="3390" y="3235"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstQuestionVC-->
         <scene sceneID="3E5-3t-jb9">
             <objects>
-                <viewController id="bVG-S4-yG1" sceneMemberID="viewController">
+                <viewController title="FirstQuestionVC" id="bVG-S4-yG1" customClass="FirstQuestionVC" customModule="ThinkUp_DrinkUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xzi-se-LTM"/>
                         <viewControllerLayoutGuide type="bottom" id="jqY-Pt-uFs"/>
@@ -494,14 +613,14 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="20" y="20" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn2-sf-neC">
                                 <rect key="frame" x="20" y="105" width="174" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuQ-Tj-HAe">
@@ -524,7 +643,7 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <rect key="frame" x="202" y="105" width="192" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="Answer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQC-Zc-7rj">
@@ -537,6 +656,12 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <color key="backgroundColor" red="0.69019607839999997" green="0.4941176471" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="AnswerBox" destination="MQC-Zc-7rj" id="iqE-LU-VOl"/>
+                        <outlet property="ContinueQ1" destination="S2y-tF-aai" id="yw4-gv-WTf"/>
+                        <outlet property="QuestionBox" destination="LuQ-Tj-HAe" id="Yx4-nr-a4E"/>
+                        <outlet property="SubjectPlayerName" destination="QdQ-Re-7KZ" id="oOq-3T-8AU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZr-Xq-d6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,22 +1,28 @@
 //
-//  PlayerWon.swift
+//  PickAnswerVC.swift
 //  ThinkUp DrinkUp
 //
-//  Created by adam mcbride on 4/28/16.
+//  Created by adam mcbride on 4/29/16.
 //  Copyright © 2016 adam mcbride. All rights reserved.
 //
 
 import UIKit
 
-class PlayerWon: UIViewController {
-     var text:String = ""
+class PickAnswerVC: UIViewController {
 
-     @IBOutlet weak var label: UILabel!
+     @IBOutlet weak var SubjectPlayerName: UILabel!
+     @IBOutlet weak var PickOption1: UIButton!
+     @IBOutlet weak var PickOption2: UIButton!
+     @IBOutlet weak var PickOption3: UIButton!
+     @IBOutlet weak var Answer1: UITextView!
+     @IBOutlet weak var Answer2: UITextView!
+     @IBOutlet weak var Answer3: UITextView!
+
+     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+
         // Do any additional setup after loading the view.
-          label.text = text
     }
 
     override func didReceiveMemoryWarning() {
