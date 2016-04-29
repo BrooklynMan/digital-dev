@@ -36,7 +36,7 @@ class MasterViewController: UITableViewController {
           load()
           self.navigationItem.leftBarButtonItem = self.editButtonItem()
           
-          let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+          let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(MasterViewController.insertNewObject(_:)))
           self.navigationItem.rightBarButtonItem = addButton
      }
      
