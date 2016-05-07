@@ -21,7 +21,6 @@
 		6638B0D51CD7EBCE0079CC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638B0D31CD7EBCE0079CC92 /* Main.storyboard */; };
 		6638B0D71CD7EBCE0079CC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6638B0D61CD7EBCE0079CC92 /* Assets.xcassets */; };
 		6638B0DA1CD7EBCE0079CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638B0D81CD7EBCE0079CC92 /* LaunchScreen.storyboard */; };
-		6638B0E21CD7F1AC0079CC92 /* Start Screen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6638B0E11CD7F1AC0079CC92 /* Start Screen@3x.png */; };
 		6638B0E41CD7FFDA0079CC92 /* PlayerNamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638B0E31CD7FFDA0079CC92 /* PlayerNamesVC.swift */; };
 		6638B0E61CD803ED0079CC92 /* FirstPlayerStageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638B0E51CD803ED0079CC92 /* FirstPlayerStageVC.swift */; };
 		6638B0EC1CD804E30079CC92 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638B0EB1CD804E30079CC92 /* DataModule.swift */; };
@@ -49,7 +48,6 @@
 		6638B0D61CD7EBCE0079CC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6638B0D91CD7EBCE0079CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6638B0DB1CD7EBCE0079CC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6638B0E11CD7F1AC0079CC92 /* Start Screen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Start Screen@3x.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/alpha/artboards.alpha/screens-3x/Start Screen@3x.png"; sourceTree = "<group>"; };
 		6638B0E31CD7FFDA0079CC92 /* PlayerNamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNamesVC.swift; sourceTree = "<group>"; };
 		6638B0E51CD803ED0079CC92 /* FirstPlayerStageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPlayerStageVC.swift; sourceTree = "<group>"; };
 		6638B0EB1CD804E30079CC92 /* DataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				6638B0D61CD7EBCE0079CC92 /* Assets.xcassets */,
 				6638B0D81CD7EBCE0079CC92 /* LaunchScreen.storyboard */,
 				660EA5AA1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png */,
-				6638B0E11CD7F1AC0079CC92 /* Start Screen@3x.png */,
 				6638B0DB1CD7EBCE0079CC92 /* Info.plist */,
 			);
 			path = "ThinkUp DrinkUp";
@@ -187,7 +184,6 @@
 				660EA5B31CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png in Resources */,
 				660EA5AB1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png in Resources */,
 				6638B0D51CD7EBCE0079CC92 /* Main.storyboard in Resources */,
-				6638B0E21CD7F1AC0079CC92 /* Start Screen@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

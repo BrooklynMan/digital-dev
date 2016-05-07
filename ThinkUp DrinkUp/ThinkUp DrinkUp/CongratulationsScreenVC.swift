@@ -37,7 +37,7 @@ class CongratulationsScreenVC: UIViewController {
      
           WinningPlayer.text = playerNames[answerPicked]
      
-          if roundNumber < 25 {
+          if roundNumber < 24 {
                roundNumber = roundNumber + 1
           } else {
                roundNumber = 0
