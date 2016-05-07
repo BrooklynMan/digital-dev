@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayerNamesVC: UIViewController {
+class PlayerNamesVC: UIViewController, UITextFieldDelegate {
      
      @IBOutlet weak var FirstPlayerName: UITextField!
      @IBOutlet weak var SecondPlayerName: UITextField!
@@ -28,11 +28,6 @@ class PlayerNamesVC: UIViewController {
           playerNames[1] = player2!
           playerNames[2] = player3!
           playerNames[3] = player4!
-          
-//        print("first player name is \(player1!).")
-//        print("second player name is \(player2!).")
-//        print("third player name is \(player3!).")
-//        print("fourth player name is \(player4!).")
        
      }
      
@@ -40,11 +35,25 @@ class PlayerNamesVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+     
+
+          // code to make the keyboard dissmissable in the player name fields
+          FirstPlayerName.delegate = self
+          SecondPlayerName.delegate = self
+          ThirdPlayerName.delegate = self
+          FourthPlayerName.delegate = self
     }
 
+     // code to make the keyboard dissmissable in the player name fields
+     // now, we make it so when a new line is detected in the text field, the app will dismiss the keyboard instead
+     func textFieldShouldReturn(FirstPlayerName: UITextField) -> Bool {
+          self.view.endEditing(true)
+          return false
+     }
+     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+          // Dispose of any resources that can be recreated.
     }
     
 

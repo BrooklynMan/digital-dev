@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		660DD4011CDD07200037DA55 /* AnswerPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DD4001CDD07200037DA55 /* AnswerPickerVC.swift */; };
 		660DD4031CDD095A0037DA55 /* CongratulationsScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DD4021CDD095A0037DA55 /* CongratulationsScreenVC.swift */; };
+		660EA5AB1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5AA1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png */; };
+		660EA5AD1CDDB42300B09285 /* ThinkUp-DrinkUpInstructions-Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5AC1CDDB42300B09285 /* ThinkUp-DrinkUpInstructions-Screen.png */; };
+		660EA5AF1CDDB79800B09285 /* ThinkUp-DrinkUpPlayer-Names.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5AE1CDDB79800B09285 /* ThinkUp-DrinkUpPlayer-Names.png */; };
+		660EA5B11CDDB8F000B09285 /* ThinkUp-DrinkUpStaging-Screen-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5B01CDDB8F000B09285 /* ThinkUp-DrinkUpStaging-Screen-1.png */; };
+		660EA5B31CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5B21CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png */; };
+		660EA5B51CDDCE6000B09285 /* ThinkUp-DrinkUpAnswer-Picker-Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5B41CDDCE6000B09285 /* ThinkUp-DrinkUpAnswer-Picker-Screen.png */; };
+		660EA5BD1CDDD35200B09285 /* ThinkUp-DrinkUpCongratulations-Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 660EA5BC1CDDD35200B09285 /* ThinkUp-DrinkUpCongratulations-Screen.png */; };
 		6638B0D01CD7EBCE0079CC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638B0CF1CD7EBCE0079CC92 /* AppDelegate.swift */; };
 		6638B0D21CD7EBCE0079CC92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638B0D11CD7EBCE0079CC92 /* ViewController.swift */; };
 		6638B0D51CD7EBCE0079CC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6638B0D31CD7EBCE0079CC92 /* Main.storyboard */; };
@@ -28,6 +35,13 @@
 /* Begin PBXFileReference section */
 		660DD4001CDD07200037DA55 /* AnswerPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerPickerVC.swift; sourceTree = "<group>"; };
 		660DD4021CDD095A0037DA55 /* CongratulationsScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationsScreenVC.swift; sourceTree = "<group>"; };
+		660EA5AA1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpLaunch-Screen.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpLaunch-Screen.png"; sourceTree = "<group>"; };
+		660EA5AC1CDDB42300B09285 /* ThinkUp-DrinkUpInstructions-Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpInstructions-Screen.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpInstructions-Screen.png"; sourceTree = "<group>"; };
+		660EA5AE1CDDB79800B09285 /* ThinkUp-DrinkUpPlayer-Names.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpPlayer-Names.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpPlayer-Names.png"; sourceTree = "<group>"; };
+		660EA5B01CDDB8F000B09285 /* ThinkUp-DrinkUpStaging-Screen-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpStaging-Screen-1.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpStaging-Screen-1.png"; sourceTree = "<group>"; };
+		660EA5B21CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpQuestion-Screen-1.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpQuestion-Screen-1.png"; sourceTree = "<group>"; };
+		660EA5B41CDDCE6000B09285 /* ThinkUp-DrinkUpAnswer-Picker-Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ThinkUp-DrinkUpAnswer-Picker-Screen.png"; path = "../../../../core collab.lab/projects/thinkUp drinkUp/final comps/ThinkUp-DrinkUpAnswer-Picker-Screen.png"; sourceTree = "<group>"; };
+		660EA5BC1CDDD35200B09285 /* ThinkUp-DrinkUpCongratulations-Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThinkUp-DrinkUpCongratulations-Screen.png"; sourceTree = "<group>"; };
 		6638B0CC1CD7EBCD0079CC92 /* ThinkUp DrinkUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThinkUp DrinkUp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6638B0CF1CD7EBCE0079CC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6638B0D11CD7EBCE0079CC92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +96,13 @@
 				6638B0E31CD7FFDA0079CC92 /* PlayerNamesVC.swift */,
 				6638B0E51CD803ED0079CC92 /* FirstPlayerStageVC.swift */,
 				6638B0ED1CD8064C0079CC92 /* FirstPlayerQuestionVC.swift */,
+				660EA5BC1CDDD35200B09285 /* ThinkUp-DrinkUpCongratulations-Screen.png */,
 				6638B0D31CD7EBCE0079CC92 /* Main.storyboard */,
+				660EA5B41CDDCE6000B09285 /* ThinkUp-DrinkUpAnswer-Picker-Screen.png */,
+				660EA5B21CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png */,
+				660EA5B01CDDB8F000B09285 /* ThinkUp-DrinkUpStaging-Screen-1.png */,
+				660EA5AE1CDDB79800B09285 /* ThinkUp-DrinkUpPlayer-Names.png */,
+				660EA5AC1CDDB42300B09285 /* ThinkUp-DrinkUpInstructions-Screen.png */,
 				660DD4021CDD095A0037DA55 /* CongratulationsScreenVC.swift */,
 				660DD4001CDD07200037DA55 /* AnswerPickerVC.swift */,
 				66B97E841CDCFB1F00E876D1 /* ThirdPlayerQuestionVC.swift */,
@@ -91,6 +111,7 @@
 				6638B0EF1CD807B90079CC92 /* SecondPlayerStageVC.swift */,
 				6638B0D61CD7EBCE0079CC92 /* Assets.xcassets */,
 				6638B0D81CD7EBCE0079CC92 /* LaunchScreen.storyboard */,
+				660EA5AA1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png */,
 				6638B0E11CD7F1AC0079CC92 /* Start Screen@3x.png */,
 				6638B0DB1CD7EBCE0079CC92 /* Info.plist */,
 			);
@@ -156,8 +177,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660EA5BD1CDDD35200B09285 /* ThinkUp-DrinkUpCongratulations-Screen.png in Resources */,
 				6638B0DA1CD7EBCE0079CC92 /* LaunchScreen.storyboard in Resources */,
 				6638B0D71CD7EBCE0079CC92 /* Assets.xcassets in Resources */,
+				660EA5AF1CDDB79800B09285 /* ThinkUp-DrinkUpPlayer-Names.png in Resources */,
+				660EA5B11CDDB8F000B09285 /* ThinkUp-DrinkUpStaging-Screen-1.png in Resources */,
+				660EA5AD1CDDB42300B09285 /* ThinkUp-DrinkUpInstructions-Screen.png in Resources */,
+				660EA5B51CDDCE6000B09285 /* ThinkUp-DrinkUpAnswer-Picker-Screen.png in Resources */,
+				660EA5B31CDDB99F00B09285 /* ThinkUp-DrinkUpQuestion-Screen-1.png in Resources */,
+				660EA5AB1CDDB37400B09285 /* ThinkUp-DrinkUpLaunch-Screen.png in Resources */,
 				6638B0D51CD7EBCE0079CC92 /* Main.storyboard in Resources */,
 				6638B0E21CD7F1AC0079CC92 /* Start Screen@3x.png in Resources */,
 			);

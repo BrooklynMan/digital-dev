@@ -12,19 +12,36 @@ class CongratulationsScreenVC: UIViewController {
      
      @IBOutlet weak var WinningPlayer: UILabel!
      @IBAction func PlayAgain(sender: AnyObject) {
+          
+          // shift player names
+          let retainer = playerNames[0]
+          
+          playerNames[0] = playerNames[1]
+          playerNames[1] = playerNames[2]
+          playerNames[2] = playerNames[3]
+          playerNames[3] = retainer
+          
      }
      @IBAction func PlayNewGame(sender: AnyObject) {
+          
+          // reset player names
+          playerNames[0] = "Player 1"
+          playerNames[1] = "Player 2"
+          playerNames[2] = "Player 3"
+          playerNames[3] = "Player 4"
      }
      
 
     override func viewDidLoad() {
         super.viewDidLoad()
      
-     if roundNumber < 25 {
-          roundNumber = roundNumber + 1
-     } else {
-          roundNumber = 0
-     }
+          WinningPlayer.text = playerNames[answerPicked]
+     
+          if roundNumber < 25 {
+               roundNumber = roundNumber + 1
+          } else {
+               roundNumber = 0
+          }
         // Do any additional setup after loading the view.
     }
 

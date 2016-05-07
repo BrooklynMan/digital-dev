@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondPlayerQuestionVC: UIViewController {
+class SecondPlayerQuestionVC: UIViewController, UITextViewDelegate {
 
      @IBOutlet weak var SubjectPlayerName: UILabel!
      @IBOutlet weak var QuestionBox: UITextView!
@@ -26,7 +26,21 @@ class SecondPlayerQuestionVC: UIViewController {
           QuestionBox.text = questions[roundNumber]
           SubjectPlayerName.text = playerNames[0]
         // Do any additional setup after loading the view.
-    }
+     
+          // code to make the keyboard dissmissable in the answerbox
+          // first, change the Return key to a Done key
+          AnswerBox2.returnKeyType = UIReturnKeyType.Done
+          AnswerBox2.delegate = self
+     }
+     
+     // code to make the keyboard dissmissable in the answerbox
+     // now, we make it so when a new line is detected in the text box, the app will dismiss the keyboard instead
+     func textView(AnswerBox2: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+          if (text == "\n") {
+               AnswerBox2.resignFirstResponder()
+          }
+          return true
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdPlayerQuestionVC: UIViewController {
+class ThirdPlayerQuestionVC: UIViewController, UITextViewDelegate {
 
      @IBOutlet weak var SubjectPlayerName: UILabel!
      @IBOutlet weak var QuestionBox: UITextView!
@@ -27,7 +27,22 @@ class ThirdPlayerQuestionVC: UIViewController {
           QuestionBox.text = questions[roundNumber]
           SubjectPlayerName.text = playerNames[0]
         // Do any additional setup after loading the view.
+     
+          // code to make the keyboard dissmissable in the answerbox
+          // first, change the Return key to a Done key
+          AnswerBox3.returnKeyType = UIReturnKeyType.Done
+          AnswerBox3.delegate = self
     }
+     
+     
+     // code to make the keyboard dissmissable in the answerbox
+     // now, we make it so when a new line is detected in the text box, the app will dismiss the keyboard instead
+     func textView(AnswerBox3: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+          if (text == "\n") {
+               AnswerBox3.resignFirstResponder()
+          }
+          return true
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

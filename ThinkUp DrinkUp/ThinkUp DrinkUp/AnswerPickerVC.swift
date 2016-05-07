@@ -12,12 +12,15 @@ class AnswerPickerVC: UIViewController {
      
      @IBOutlet weak var SubjectPlayerName: UILabel!
      @IBAction func PickOption1(sender: AnyObject) {
+          answerPicked = 1
      }
      
      @IBAction func PickOption2(sender: AnyObject) {
+          answerPicked = 2
      }
 
      @IBAction func PickOption3(sender: AnyObject) {
+          answerPicked = 3
      }
      
      @IBOutlet weak var Answer1: UITextView!
@@ -28,6 +31,8 @@ class AnswerPickerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+          SubjectPlayerName.text = playerNames[0]
+     
           Answer1.text = playerAnswers[0]
           Answer2.text = playerAnswers[1]
           Answer3.text = playerAnswers[2]
