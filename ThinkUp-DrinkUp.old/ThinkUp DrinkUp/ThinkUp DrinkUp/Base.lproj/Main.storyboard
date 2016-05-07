@@ -77,15 +77,6 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-kI-h4s">
-                                <rect key="frame" x="20" y="667" width="374" height="49"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <segue destination="9Tr-Lh-YaU" kind="show" id="dxU-is-6j4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter Player Names" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBR-1L-sff">
                                 <rect key="frame" x="20" y="105" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,26 +91,36 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CoD-sV-EUu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Player 1" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CoD-sV-EUu">
                                 <rect key="frame" x="20" y="178" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="clc-y5-KL2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Player 3" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="clc-y5-KL2">
                                 <rect key="frame" x="20" y="241" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Trg-nR-uDy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Player 2" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Trg-nR-uDy">
                                 <rect key="frame" x="227" y="178" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-9p-2Fu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Player 4" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-9p-2Fu">
                                 <rect key="frame" x="227" y="241" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-kI-h4s">
+                                <rect key="frame" x="20" y="308" width="374" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="CommitPlayerNames:" destination="JwU-OU-QCP" eventType="touchUpInside" id="YGj-QG-2Dp"/>
+                                    <segue destination="9Tr-Lh-YaU" kind="show" id="dxU-is-6j4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3294117647" green="0.63529411759999999" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -148,9 +149,6 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Staging Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-ZI-bRy">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-8A-nZn">
                                 <rect key="frame" x="20" y="617" width="374" height="99"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -174,6 +172,9 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Staging Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-ZI-bRy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -658,7 +659,7 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="AnswerBox" destination="MQC-Zc-7rj" id="iqE-LU-VOl"/>
-                        <outlet property="ContinueQ1" destination="S2y-tF-aai" id="yw4-gv-WTf"/>
+                        <outlet property="ContinueQ1" destination="S2y-tF-aai" id="iXV-kU-upf"/>
                         <outlet property="QuestionBox" destination="LuQ-Tj-HAe" id="Yx4-nr-a4E"/>
                         <outlet property="SubjectPlayerName" destination="QdQ-Re-7KZ" id="oOq-3T-8AU"/>
                     </connections>
@@ -674,7 +675,7 @@ Fusce mattis quam odio, et pretium eros gravida vel. Lorem ipsum dolor sit amet,
         <image name="Staging Screen.png" width="138" height="245"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LyV-ge-V6j"/>
         <segue reference="fK4-vS-tWy"/>
+        <segue reference="LyV-ge-V6j"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,24 +1,31 @@
 //
-//  PlayerNamesVC.swift
+//  ThirdPlayerQuestionVC.swift
 //  ThinkUp DrinkUp
 //
-//  Created by adam mcbride on 4/29/16.
+//  Created by adam mcbride on 5/6/16.
 //  Copyright © 2016 adam mcbride. All rights reserved.
 //
 
 import UIKit
 
-class PlayerNamesVC: UIViewController {
+class ThirdPlayerQuestionVC: UIViewController {
 
-     @IBOutlet weak var ContinuePlayerName: UIButton!
-     @IBOutlet weak var FirstPlayerName: UITextField!
-     @IBOutlet weak var SecondPlayerName: UITextField!
-     @IBOutlet weak var ThirdPlayerName: UITextField!
-     @IBOutlet weak var FourthPlayerName: UITextField!
+     @IBOutlet weak var SubjectPlayerName: UILabel!
+     @IBOutlet weak var QuestionBox: UITextView!
+     @IBOutlet weak var AnswerBox3: UITextView!
+     @IBAction func CommitAnswer3AndContinue(sender: AnyObject) {
+          // commit answer 3 ansd continue
+          
+          let answer3 = AnswerBox3.text
+          
+          playerAnswers[2] = answer3!
+     }
+     
      
     override func viewDidLoad() {
         super.viewDidLoad()
-
+          QuestionBox.text = questions[roundNumber]
+          SubjectPlayerName.text = playerNames[0]
         // Do any additional setup after loading the view.
     }
 
