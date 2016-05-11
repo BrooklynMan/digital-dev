@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ThinkUp DrinkUp.xcodeproj">
+      location = "self:/Users/adam/parsonsDrive/spring 2016/digital dev.ios and swift/digital-dev/ThinkUp DrinkUp/ThinkUp DrinkUp.xcodeproj">
    </FileRef>
 </Workspace>

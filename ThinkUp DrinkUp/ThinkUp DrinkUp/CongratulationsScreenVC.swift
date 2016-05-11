@@ -22,6 +22,7 @@ class CongratulationsScreenVC: UIViewController {
           playerNames[3] = retainer
           
      }
+     @IBOutlet weak var CurrentRoundNumber: UITextField!
      @IBAction func PlayNewGame(sender: AnyObject) {
           
           // reset player names
@@ -29,6 +30,9 @@ class CongratulationsScreenVC: UIViewController {
           playerNames[1] = "Player 2"
           playerNames[2] = "Player 3"
           playerNames[3] = "Player 4"
+          
+          //reset round number
+          roundNumber = 0
      }
      
 
@@ -43,6 +47,9 @@ class CongratulationsScreenVC: UIViewController {
                roundNumber = 0
           }
         // Do any additional setup after loading the view.
+          // the round number need to be converted from Int to String and set +1 due to indexing from 0
+          let thisRoundNumber = String(roundNumber)
+          CurrentRoundNumber.text = "Round: " + thisRoundNumber
     }
 
     override func didReceiveMemoryWarning() {

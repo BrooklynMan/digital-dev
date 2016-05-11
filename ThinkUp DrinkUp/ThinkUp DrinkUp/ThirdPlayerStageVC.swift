@@ -13,13 +13,19 @@ class ThirdPlayerStageVC: UIViewController {
 
      @IBOutlet weak var ContinueTPS: UIButton!
      @IBOutlet weak var CurrentPlayerLabelTPS: UILabel!
-
+     @IBOutlet weak var CurrentRoundNumber: UITextField!
+     
+     
      override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
           
           CurrentPlayerLabelTPS.text = playerNames[3]
+          
+          // the round number need to be converted from Int to String and set +1 due to indexing from 0
+          let thisRoundNumber = String(roundNumber + 1)
+          CurrentRoundNumber.text = "Round: " + thisRoundNumber
     }
 
     override func didReceiveMemoryWarning() {

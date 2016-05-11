@@ -12,13 +12,18 @@ class SecondPlayerStageVC: UIViewController {
 
      @IBOutlet weak var ContinueSPS: UIButton!
      @IBOutlet weak var CurrentPlayerLabelSPS: UILabel!
+     @IBOutlet weak var CurrentRoundNumber: UITextField!
      
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
           CurrentPlayerLabelSPS.text = playerNames[2]
-    }
+     
+          // the round number need to be converted from Int to String and set +1 due to indexing from 0
+          let thisRoundNumber = String(roundNumber + 1)
+          CurrentRoundNumber.text = "Round: " + thisRoundNumber
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
