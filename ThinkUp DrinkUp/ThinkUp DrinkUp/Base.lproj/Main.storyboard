@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpInstructions-Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="FRQ-Wq-usU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructionsScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="FRQ-Wq-usU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSl-Ry-Xnz">
-                                <rect key="frame" x="30" y="679" width="354" height="37"/>
+                                <rect key="frame" x="20" y="674" width="374" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <segue destination="aCi-kG-p8D" kind="show" id="mG0-CE-Go9"/>
@@ -52,7 +52,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpPlayer-Names.png" translatesAutoresizingMaskIntoConstraints="NO" id="8G2-c2-DPJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlayerNames.png" translatesAutoresizingMaskIntoConstraints="NO" id="8G2-c2-DPJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Player 1" placeholder="Player 1" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iid-et-fE4">
@@ -71,7 +71,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-bs-LLr">
-                                <rect key="frame" x="32" y="681" width="351" height="35"/>
+                                <rect key="frame" x="21" y="676" width="373" height="46"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitPlayerNamesAndContinue:" destination="aCi-kG-p8D" eventType="touchUpInside" id="ez9-c8-NfQ"/>
@@ -111,11 +111,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpStaging-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0dq-rT-AZk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StagingScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="0dq-rT-AZk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-Ws-GWZ">
-                                <rect key="frame" x="31" y="677" width="352" height="39"/>
+                                <rect key="frame" x="20" y="676" width="374" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitPlayerNamesAndContinue:" destination="aCi-kG-p8D" eventType="touchUpInside" id="FtH-yc-zOF"/>
@@ -161,7 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpStaging-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RXD-bA-YaB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StagingScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="RXD-bA-YaB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oq-7v-HRC">
@@ -171,7 +171,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgk-0S-uXl">
-                                <rect key="frame" x="31" y="680" width="352" height="36"/>
+                                <rect key="frame" x="20" y="674" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitPlayerNamesAndContinue:" destination="aCi-kG-p8D" eventType="touchUpInside" id="YUj-hG-1et"/>
@@ -211,7 +211,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpStaging-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="VHX-df-Ajh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StagingScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="VHX-df-Ajh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci9-kx-wDu">
@@ -221,7 +221,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biJ-UT-r35">
-                                <rect key="frame" x="31" y="678" width="352" height="38"/>
+                                <rect key="frame" x="20" y="676" width="374" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitPlayerNamesAndContinue:" destination="aCi-kG-p8D" eventType="touchUpInside" id="WmE-lz-keB"/>
@@ -261,7 +261,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpQuestion-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5t-qa-Cvn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuestionsScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5t-qa-Cvn">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Nulla ut nulla non orci feugiat consequat. In hac habitasse platea dictumst?" translatesAutoresizingMaskIntoConstraints="NO" id="JtG-jH-Oq4">
@@ -271,7 +271,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfE-hd-znx">
-                                <rect key="frame" x="33" y="679" width="349" height="37"/>
+                                <rect key="frame" x="20" y="674" width="374" height="49"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitAnswer1AndContinue:" destination="tX8-00-7WB" eventType="touchUpInside" id="H4Q-cf-t6f"/>
@@ -325,7 +325,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpAnswer-Picker-Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="JwO-tN-Krc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answerPickerScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="JwO-tN-Krc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFt-9y-kkA">
@@ -335,7 +335,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT6-3G-ebU">
-                                <rect key="frame" x="15" y="484" width="87" height="38"/>
+                                <rect key="frame" x="15" y="419" width="95" height="144"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <connections>
                                     <action selector="PickOption2:" destination="Fwm-hq-FG5" eventType="touchUpInside" id="wLY-M7-51J"/>
@@ -343,7 +343,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV6-nj-GW7">
-                                <rect key="frame" x="15" y="641" width="87" height="34"/>
+                                <rect key="frame" x="15" y="573" width="95" height="139"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <connections>
                                     <action selector="PickOption3:" destination="Fwm-hq-FG5" eventType="touchUpInside" id="RbP-ci-rMh"/>
@@ -361,7 +361,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-cg-RUO">
-                                <rect key="frame" x="15" y="331" width="87" height="36"/>
+                                <rect key="frame" x="15" y="264" width="95" height="147"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <connections>
                                     <action selector="PickOption1:" destination="Fwm-hq-FG5" eventType="touchUpInside" id="q1J-Dt-odn"/>
@@ -401,17 +401,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpCongratulations-Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="qD2-tz-1Et">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CongratulationsScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="qD2-tz-1Et">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-5u-Pvg">
-                                <rect key="frame" x="20" y="94" width="374" height="63"/>
+                                <rect key="frame" x="20" y="83" width="374" height="63"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="42"/>
                                 <color key="textColor" red="0.0078431372549019607" green="0.11764705882352941" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA0-YR-mc8">
-                                <rect key="frame" x="29" y="631" width="353" height="38"/>
+                                <rect key="frame" x="20" y="619" width="374" height="46"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="PlayAgain:" destination="TD2-pb-9yM" eventType="touchUpInside" id="V32-Gn-9mc"/>
@@ -419,7 +419,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRG-yB-EVu">
-                                <rect key="frame" x="29" y="679" width="353" height="37"/>
+                                <rect key="frame" x="20" y="676" width="374" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="PlayNewGame:" destination="TD2-pb-9yM" eventType="touchUpInside" id="yoo-Gx-E3v"/>
@@ -427,7 +427,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Round: X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gM3-dJ-nDC">
-                                <rect key="frame" x="148" y="600" width="118" height="30"/>
+                                <rect key="frame" x="148" y="591" width="118" height="30"/>
                                 <color key="textColor" red="0.0078431372550000003" green="0.1176470588" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -458,11 +458,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpQuestion-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAF-Lz-qmM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuestionsScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAF-Lz-qmM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="857-uw-J2X">
-                                <rect key="frame" x="33" y="676" width="349" height="40"/>
+                                <rect key="frame" x="20" y="675" width="374" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitAnswer1AndContinue:" destination="tX8-00-7WB" eventType="touchUpInside" id="u6r-Fk-67E"/>
@@ -521,11 +521,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThinkUp-DrinkUpQuestion-Screen-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-UE-2H8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuestionsScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-UE-2H8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ME-1b-DUy">
-                                <rect key="frame" x="33" y="681" width="349" height="35"/>
+                                <rect key="frame" x="20" y="674" width="374" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <connections>
                                     <action selector="CommitAnswer1AndContinue:" destination="tX8-00-7WB" eventType="touchUpInside" id="ctV-oU-wIs"/>
@@ -573,12 +573,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ThinkUp-DrinkUpAnswer-Picker-Screen.png" width="1242" height="2208"/>
-        <image name="ThinkUp-DrinkUpCongratulations-Screen.png" width="1242" height="2208"/>
-        <image name="ThinkUp-DrinkUpInstructions-Screen.png" width="1242" height="2208"/>
-        <image name="ThinkUp-DrinkUpPlayer-Names.png" width="1242" height="2208"/>
-        <image name="ThinkUp-DrinkUpQuestion-Screen-1.png" width="1242" height="2208"/>
-        <image name="ThinkUp-DrinkUpStaging-Screen-1.png" width="1242" height="2208"/>
+        <image name="CongratulationsScreen.png" width="1242" height="2208"/>
+        <image name="InstructionsScreen.png" width="1242" height="2208"/>
+        <image name="PlayerNames.png" width="1242" height="2208"/>
+        <image name="QuestionsScreen.png" width="1242" height="2208"/>
+        <image name="StagingScreen.png" width="1242" height="2208"/>
+        <image name="answerPickerScreen.png" width="1242" height="2208"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pKj-Kc-ff4"/>
