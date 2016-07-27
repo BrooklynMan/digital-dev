@@ -1,5 +1,5 @@
 # ThinkUp DrinkUp
-## A Scocial Drinking Game
+## A Social Drinking Game
 
 ### Introduction
 
